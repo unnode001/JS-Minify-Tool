@@ -1,0 +1,71 @@
+# 设置默认行为，如果 Git 版本足够新则覆盖 `core.autocrlf`
+* text=auto
+
+# 明确声明你希望始终被规范化并转换为本地行结尾的文件
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.xml text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.sass text eol=lf
+*.less text eol=lf
+
+# 配置文件
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.eslintrc.js text eol=lf
+tsconfig.json text eol=lf
+package.json text eol=lf
+package-lock.json text eol=lf
+yarn.lock text eol=lf
+
+# 明确声明你不希望被规范化的文件
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.mov binary
+*.mp4 binary
+*.mp3 binary
+*.flv binary
+*.fla binary
+*.swf binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.ttf binary
+*.eot binary
+*.woff binary
+*.woff2 binary
+*.otf binary
+
+# 文档
+*.pdf binary
+
+# 字体
+*.ttf binary
+*.eot binary
+*.woff binary
+*.woff2 binary
+
+# 归档
+*.tar binary
+*.gz binary
+*.zip binary
+*.7z binary
+*.rar binary
+
+# 设置 linguist 属性
+*.min.js linguist-generated=true
+*.min.css linguist-generated=true
+dist/* linguist-generated=true
+build/* linguist-generated=true
+coverage/* linguist-generated=true
+docs/* linguist-documentation=true
+*.md linguist-documentation=true
